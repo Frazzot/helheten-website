@@ -1,0 +1,37 @@
+---
+interface Props {}
+
+const {} = Astro.props;
+---
+
+<div id="hamburger" class="h-12 w-12 absolute right-4 top-4">
+  <div
+    class="transition-transform h-2 w-12 top-3 rounded-[3px] absolute bg-grey-dark"
+  >
+  </div>
+  <div
+    class="transition-transform h-2 w-12 bottom-3 rounded-[3px] absolute bg-grey-dark"
+  >
+  </div>
+</div>
+
+<style>
+  .open-top {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .open-bottom {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+</style>
+
+<script>
+  let hamburger = document.getElementById("hamburger");
+  hamburger!!.onclick = hamburgerOnclick;
+  function hamburgerOnclick() {
+    hamburger!!.children[0].classList.toggle("open-top");
+    hamburger!!.children[1].classList.toggle("open-bottom");
+  }
+
+  console.log(hamburger);
+</script>
