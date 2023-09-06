@@ -6,7 +6,7 @@ import Button from "../components/Button.astro";
 
 <Layout title="Welcome to Astro.">
   <div class="absolute w-screen aspect-[10/7] grid justify-center items-center">
-	<img class="w-72" src="/img/helheten-logo.svg" alt="Helheten Friskvård" />
+    <img class="w-72" src="/img/helheten-logo.svg" alt="Helheten Friskvård" />
   </div>
   <img
     src="/img/helheten_bg.png"
@@ -30,7 +30,7 @@ import Button from "../components/Button.astro";
       title="BOKA TID"
       href="https://www.bokadirekt.se/places/helheten-friskvard-fjaras-7695"
     />
-	<div class="h-12"></div>
+    <div class="h-12"></div>
     <div id="default-carousel" class="relative w-full" data-carousel="slide">
       <!-- Carousel wrapper -->
       <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
@@ -61,7 +61,7 @@ import Button from "../components/Button.astro";
         <!-- Item 4 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img
-            src="/img/salong.png"
+            src="/img/outside.jpg"
             class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             alt="..."
           />
@@ -162,6 +162,11 @@ import Button from "../components/Button.astro";
         </span>
       </button>
     </div>
-	<div class="h-12"></div>
+    <div class="h-12"></div>
+    <div class="sk-ww-google-reviews" data-embed-id="190682"></div>
+    <script
+      src="https://widgets.sociablekit.com/google-reviews/widget.js"
+      async
+      defer></script>
   </main>
 </Layout>
