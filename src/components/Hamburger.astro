@@ -2,9 +2,48 @@
 interface Props {}
 
 const {} = Astro.props;
+import { Icon } from "astro-icon";
 ---
 
-<div id="hamburger" class="h-12 w-12 absolute right-4 top-4 z-10">
+<div
+  id="menu"
+  class="fixed w-screen h-screen z-40 menu-closed transition-transform"
+>
+  <a href="/">
+    <img
+      class="w-48 m-4"
+      src="/img/helheten_logo_dark.png"
+      alt="helheten logo"
+    />
+  </a>
+  <div class="m-8 mt-36 flex flex-col gap-12">
+    <a href="">
+      <div>
+        <h1 class="text-grey-dark text-4xl font-francoisOne">OM OSS</h1>
+      </div>
+    </a>
+    <a href="">
+      <div>
+        <h1 class="text-grey-dark text-4xl font-francoisOne">BEHANDLINGAR</h1>
+      </div>
+    </a>
+    <a href="">
+      <div>
+        <h1 class="text-grey-dark text-4xl font-francoisOne">KONTAKTA OSS</h1>
+      </div>
+    </a>
+  </div>
+  <div class="mx-8 bottom-20 absolute flex flex-row items-end">
+    <a href="https://www.facebook.com/helhetenfriskvard/?locale=sv_SE">
+      <Icon class="scale-[1.15] w-20 text-grey-dark" name="facebook-social" />
+    </a>
+    <a href="https://www.instagram.com/helhetenfriskvard/">
+      <Icon class="w-20 text-grey-dark" name="instagram" />
+    </a>
+  </div>
+</div>
+
+<div id="hamburger" class="h-12 w-12 absolute right-4 top-4 z-50">
   <div
     class="transition-transform h-2 w-12 top-3 rounded-[3px] absolute bg-grey-dark"
   >
@@ -16,6 +55,18 @@ const {} = Astro.props;
 </div>
 
 <style>
+  .menu-closed {
+    transform: translateY(-100vh);
+  }
+
+  #menu {
+    background-image: url("/img/Helheten-backdrop.png");
+    background-position: -150px 0px;
+    transition-timing-function: cubic-bezier(0.52, 0.03, 0.7, 0.63);
+    transition-duration: 250ms;
+    background-size: cover;
+  }
+
   .open-top {
     transform: translateY(8px) rotate(45deg);
   }
@@ -27,11 +78,11 @@ const {} = Astro.props;
 
 <script>
   let hamburger = document.getElementById("hamburger");
+  let menu = document.getElementById("menu");
   hamburger!!.onclick = hamburgerOnclick;
   function hamburgerOnclick() {
     hamburger!!.children[0].classList.toggle("open-top");
     hamburger!!.children[1].classList.toggle("open-bottom");
+    menu!!.classList.toggle("menu-closed");
   }
-
-  console.log(hamburger);
 </script>
