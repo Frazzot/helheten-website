@@ -1,16 +1,16 @@
 ---
 interface Props {
-    title: string;
-    href: string;
+  title: string;
+  href: string;
 }
 
-const {title, href} = Astro.props;
+const { title, href } = Astro.props;
 ---
 
 <a href={href}>
-    <div class="bg-sage rounded-md drop-shadow-lg py-4">
-        <p class="text-off-white text-4xl text-center font-francoisOne">
-            {title}
-        </p>
-    </div>
+  <div class="bg-sage rounded-md drop-shadow-lg py-4">
+    <p class="text-off-white text-4xl text-center font-francoisOne">
+      {title}
+    </p>
+  </div>
 </a>

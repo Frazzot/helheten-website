@@ -6,7 +6,9 @@ import { Icon } from "astro-icon";
 ---
 
 <div class="h-20"></div>
-<div class="relative flex flex-row bg-sage w-screen h-96 z-2 shadow-xl items-stretch p-8 gap-4">
+<div
+  class="relative flex flex-row bg-sage w-screen h-96 z-2 shadow-xl items-stretch p-8 gap-4"
+>
   <div class="grow-0 flex flex-col">
     <p class="px-2 text-lg text-off-white mb-8 font-jost font-bold">
       Välkommen till oss!
@@ -15,7 +17,9 @@ import { Icon } from "astro-icon";
     <p class="px-2 text-lg text-off-white font-jost">Fjärås Torg</p>
     <p class="px-2 text-lg text-off-white font-jost">Rajgräsvägen 3</p>
     <p class="px-2 text-lg text-off-white font-jost">439 71 Fjärås</p>
-    <p class="px-2 text-lg text-off-white font-jost">Tel: <span class="underline">0300-540048</span></p>
+    <p class="px-2 text-lg text-off-white font-jost">
+      Tel: <span class="underline">0300-540048</span>
+    </p>
     <div class="mt-2 flex flex-row grow items-end">
       <a href="https://www.facebook.com/helhetenfriskvard/?locale=sv_SE">
         <Icon class="scale-[1.15] w-20 text-off-white" name="facebook-social" />
@@ -25,9 +29,9 @@ import { Icon } from "astro-icon";
       </a>
     </div>
   </div>
-  
+
   <div class="google-map grow relative">
-    <iframe 
+    <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2146.024751278488!2d12.169250977297134!3d57.46088145915438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464fe703bf3aceb1%3A0x41cc253a697f89cf!2sHelheten%20Friskv%C3%A5rd!5e0!3m2!1ssv!2sse!4v1694040412190!5m2!1ssv!2sse"
       style="border:0;"
       width="100"
@@ -35,16 +39,16 @@ import { Icon } from "astro-icon";
       allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+  </div>
 </div>
 
 <style lang="css">
-.google-map iframe {
+  .google-map iframe {
     height: 100%;
     width: 100%;
     left: 0;
     top: 0;
     position: absolute;
     border-radius: 10px;
-}
+  }
 </style>

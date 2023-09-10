@@ -1,0 +1,47 @@
+---
+import Nav from "../components/Nav.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Helheten Friskvård">
+  <Nav />
+  <main class="px-8 pt-8">
+    <h2 class="text-off-white pb-8 text-3xl font-francoisOne">KONTAKTA OSS</h2>
+    <p class="text-lg pb-4 text-off-white font-jost">
+      Har du frågor eller funderingar?
+    </p>
+    <p class="text-lg pb-4 text-off-white font-jost">
+      Tveka inte att kontakta oss! Lättast når du oss via salongens telefon på
+      0300-540048, det går jättebra att tala in ett meddelande om vi inte kan ta
+      emot samtalet.
+    </p>
+    <p class="text-lg pb-4 text-off-white font-jost">
+      Det går också bra att maila oss på <span class="underline"
+        >helhetenfriskvard@gmail.com.</span
+      >
+    </p>
+  </main>
+  <div id="banner" class="w-screen h-auto mt-8">
+    <h2 class="text-off-white pb-8 text-3xl font-francoisOne px-8 pt-8">FAQ</h2>
+    <ul class="text-off-white mx-8 pb-8">
+      <li class="text-lg pb-4 text-off-white font-jost">
+        ◦ Salongens öppettider varierar, butiken är öppen när personal är på
+        plats. Bokningsbara tider ses i Boka Direkt.
+      </li>
+      <li class="text-lg pb-4 text-off-white font-jost">
+        ◦ Bokning av lokal, spakalas eller liknande sker via telefon.
+      </li>
+      <li class="text-lg pb-4 text-off-white font-jost">
+        ◦ För mer nyheter om evenemang samt behandlings- och butikserbjudanden
+        kika gärna på vår facebook sida.
+      </li>
+    </ul>
+  </div>
+</Layout>
+
+<style>
+  #banner {
+    background-image: url(/img/Helheten-backdrop-30.png);
+    background-size: cover;
+  }
+</style>
