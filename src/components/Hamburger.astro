@@ -12,22 +12,24 @@ import { Icon } from "astro-icon";
   <a href="/">
     <img
       class="w-48 m-4"
-      src="/img/helheten_logo_dark.png"
+      src="/img/helheten_logo_dark.webp"
       alt="helheten logo"
     />
   </a>
   <div class="m-8 mt-36 flex flex-col gap-12">
     <a href="">
       <div>
-        <h1 class="text-grey-dark text-4xl font-francoisOne">OM OSS</h1>
+        <h1 id="about" class="text-grey-dark text-4xl font-francoisOne">
+          OM OSS
+        </h1>
       </div>
     </a>
-    <a href="">
+    <a id="treatment" href="">
       <div>
         <h1 class="text-grey-dark text-4xl font-francoisOne">BEHANDLINGAR</h1>
       </div>
     </a>
-    <a href="/kontakt">
+    <a id="contact" href="/kontakt">
       <div>
         <h1 class="text-grey-dark text-4xl font-francoisOne">KONTAKTA OSS</h1>
       </div>
@@ -60,7 +62,7 @@ import { Icon } from "astro-icon";
   }
 
   #menu {
-    background-image: url("/img/Helheten-backdrop.png");
+    background-image: url("/img/Helheten-backdrop.webp");
     background-position: -150px 0px;
     transition-timing-function: cubic-bezier(0.52, 0.03, 0.7, 0.63);
     transition-duration: 250ms;
@@ -76,13 +78,29 @@ import { Icon } from "astro-icon";
   }
 </style>
 
-<script>
+<script is:inline>
+function hamburgerOnclick() {
   let hamburger = document.getElementById("hamburger");
   let menu = document.getElementById("menu");
-  hamburger!!.onclick = hamburgerOnclick;
-  function hamburgerOnclick() {
-    hamburger!!.children[0].classList.toggle("open-top");
-    hamburger!!.children[1].classList.toggle("open-bottom");
-    menu!!.classList.toggle("menu-closed");
-  }
+  hamburger.children[0].classList.toggle("open-top");
+  hamburger.children[1].classList.toggle("open-bottom");
+  menu.classList.toggle("menu-closed");
+}
+
+document.getElementById("hamburger").onclick = hamburgerOnclick;
+
+// User clicks -> Browser determines which element was clicked -> it was hamburger ->
+// document.getElementById("hamburger").onclick() == hamburgerOnclick()
+
+function closeMenu() {
+  let hamburger = document.getElementById("hamburger");
+  let menu = document.getElementById("menu");
+  hamburger.children[0].classList.remove("open-top");
+  hamburger.children[1].classList.remove("open-bottom");
+  menu.classList.add("menu-closed");
+}
+
+document.getElementById("about").onclick = closeMenu;
+document.getElementById("treatment").onclick = closeMenu;
+document.getElementById("contact").onclick = closeMenu;
 </script>

@@ -1,6 +1,7 @@
 ---
 import Hamburger from "../components/Hamburger.astro";
 import Footer from "../components/Footer.astro";
+import { ViewTransitions } from "astro:transitions";
 
 interface Props {
   title: string;
@@ -18,56 +19,56 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <ViewTransitions />
   </head>
   <body class="bg-grey-dark">
     <Hamburger />
     <slot />
     <Footer />
+    <style is:global>
+      @font-face {
+        font-family: "Jost";
+        src: url("/fonts/Jost-Regular.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Jost";
+        src: url("/fonts/Jost-Italic.ttf") format("truetype");
+        font-style: italic;
+        font-weight: 400;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Jost";
+        src: url("/fonts/Jost-Bold.ttf") format("truetype");
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "Jost";
+        src: url("/fonts/Jost-BoldItalic.ttf") format("truetype");
+        font-style: italic;
+        font-weight: 700;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "FrancoisOne";
+        src: url("/fonts/FrancoisOne-Regular.ttf") format("truetype");
+        font-style: regular;
+        font-weight: 400;
+        font-display: swap;
+      }
+    </style>
+
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
+    ></script>
   </body>
 </html>
-
-<style is:global>
-  @font-face {
-    font-family: "Jost";
-    src: url("/fonts/Jost-Regular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Jost";
-    src: url("/fonts/Jost-Italic.ttf") format("truetype");
-    font-style: italic;
-    font-weight: 400;
-    font-display: swap;
-  }
-  @font-face {
-    font-family: "Jost";
-    src: url("/fonts/Jost-Bold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "Jost";
-    src: url("/fonts/Jost-BoldItalic.ttf") format("truetype");
-    font-style: italic;
-    font-weight: 700;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: "FrancoisOne";
-    src: url("/fonts/FrancoisOne-Regular.ttf") format("truetype");
-    font-style: regular;
-    font-weight: 400;
-    font-display: swap;
-  }
-</style>
-
-<script
-  is:inline
-  src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
-></script>
