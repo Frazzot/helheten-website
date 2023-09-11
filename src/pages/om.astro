@@ -1,0 +1,97 @@
+---
+import Button from "../components/Button.astro";
+import Nav from "../components/Nav.astro";
+import Profile from "../components/Profile.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Helheten Friskvård - Om Oss">
+  <Nav />
+  <main class="px-8 pt-8">
+    <h2 class="text-off-white pb-8 text-3xl font-francoisOne">OM OSS</h2>
+    <p class="text-lg pb-4 text-off-white font-jost">
+      Möt oss på Helheten Friskvård!
+    </p>
+    <p class="text-lg pb-4 text-off-white font-jost">
+      Vi som jobbar på salongen driver våra egna företag och sysslar med lite
+      olika behandlingar. Här finns möjlighet att läsa lite mer om vilka vi är,
+      hur ni kontaktar och bokar tid hos oss.
+    </p>
+    <img class="rounded-md" src="/img/outside.webp" alt="Helheten utsida" />
+    <div class="bg-sage h-8 mt-12 rounded-md"></div>
+    <Profile
+      name="KARIN FRANZÉN KARLSSON"
+      title="Ägare av Helheten Friskvård"
+      image="/img/karin_1.jpg"
+      alt="Profilbild Karin"
+    />
+    <div class="mt-12">
+      <p class="text-lg text-off-white font-jost">
+        Ekologisk massage- och hudterapeut. Även utbildad undersköterska.
+      </p>
+      <p class="text-lg text-off-white font-jost pt-4">
+        Jag erbjuder ett brett sortiment av olika massage- och
+        hudvårdsbehandlingar, bl.a klassisk massage, koppning, Gua Sha vaxning
+        och ansiktsbehandlingar.
+      </p>
+      <p class="text-lg text-off-white font-jost pt-4">
+        Utöver detta gör jag även färg & form av bryn/fransar samt manikyr med
+        gellack.
+      </p>
+      <p class="text-lg text-off-white font-jost pt-4">
+        Varmt välkommen att boka din behandling hos mig!
+      </p>
+    </div>
+    <div class="mt-8"></div>
+    <Button
+      title="BOKA TID KARIN"
+      href="https://www.bokadirekt.se/places/helheten-friskvard-fjaras-7695?sr=7E1FBAC7_ABD0_4395_B5D4_23319F4B6CB4"
+    />
+    <Profile
+      name="ANETTE BLOMEDAL"
+      title="Medicinsk fotterapeut"
+      image="/img/anette_1.jpg"
+      alt="Profilbild Karin"
+    />
+    <div class="mt-12">
+      <p class="text-lg text-off-white font-jost">
+        Medicinsk fotterapeut & utbildad undersköterska.
+      </p>
+      <p class="text-lg text-off-white font-jost pt-4">
+        Välkommen till AB’s fotvård, hos mig kan du boka allt mellan en klassisk
+        fotvårdsbehandling till medicinsk fotvård. Du får tips och råd om hur du
+        sköter dina fötter på bästa sätt.
+      </p>
+      <p class="text-lg text-off-white font-jost pt-4">
+        Jag tar emot remisser från både region Halland och Västra
+        Götalansregionen.
+      </p>
+      <p class="text-lg text-off-white font-jost pt-4">
+        Varmt välkommen att boka din behandling hos mig!
+      </p>
+    </div>
+    <div class="mt-8"></div>
+    <Button
+      title="BOKA TID ANETTE"
+      href="https://www.bokadirekt.se/places/helheten-friskvard-fjaras-7695?sr=59173687_5C90_464A_B138_7F22823D874D"
+    />
+  </main>
+  <div id="banner" class="w-screen h-auto mt-24">
+    <h2 class="text-off-white p-8 text-3xl font-francoisOne">JOBBA HOS OSS</h2>
+    <p class="text-lg text-off-white font-jost pt-4 px-8">
+      Är du intresserad av att hyra behandlingsrum?
+    </p>
+    <p class="text-lg text-off-white font-jost pt-4 px-8">
+      Hör gärna av dig till Karin på 0702-412656 eller maila
+      karin.lillevra@hotmail.com.
+    </p>
+    <p class="text-lg text-off-white font-jost py-8 px-8">Varmt välkommen!</p>
+  </div>
+</Layout>
+
+<style>
+  #banner {
+    background-image: url(/img/Helheten-backdrop-30.webp);
+    background-size: cover;
+  }
+</style>
