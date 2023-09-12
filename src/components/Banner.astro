@@ -1,0 +1,17 @@
+---
+interface Props {
+  title: string;
+  p1: string;
+  p2?: string;
+  p3?: string;
+}
+
+const { title, p1, p2, p3 } = Astro.props;
+---
+
+<div class="w-screen -translate-x-8 bg-sage shadow-md h-auto px-8 py-4 mt-8">
+  <h3 class="text-off-white text-xl font-francoisOne py-4">{title}</h3>
+  <p class="text-lg pb-4 text-off-white font-jost">{p1}</p>
+  {p2 ? <p class="text-lg pb-4 text-off-white font-jost">{p2}</p> : null}
+  {p3 ? <p class="text-lg pb-4 text-off-white font-jost">{p3}</p> : null}
+</div>

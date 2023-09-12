@@ -3,6 +3,7 @@ import Nav from "../components/Nav.astro";
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.astro";
 import Treatment from "../components/Treatment.astro";
+import Banner from "../components/Banner.astro";
 ---
 
 <Layout title="Helheten Friskvård - Behandlingar">
@@ -14,17 +15,18 @@ import Treatment from "../components/Treatment.astro";
       topp till tå.
     </p>
     <p class="text-lg pb-4 text-off-white font-jost">
-      Du kan läsa mer om våra behandlingar nedan. För att boka tid och se priser
-      besök oss på <a
+      Här kan du läsa mer om våra behandlingar, använd direktlänkarna nedan för
+      att komma till avsittet med behandlingar du vill läsa om. För att boka tid
+      och se priser besök oss på <a
         class="underline"
         href="https://www.bokadirekt.se/places/helheten-friskvard-fjaras-7695"
         >Boka Direkt.</a
       >
     </p>
     <div class="mt-8 grid gap-y-4 grid-cols-1">
-      <Button title="AKUPUNKTUR" href="" align="text-left" />
-      <Button title="ANSIKTSBEHANDLING" href="" align="text-left" />
-      <Button title="BRYN/FRANSAR" href="" align="text-left" />
+      <Button title="AKUPUNKTUR" href="#AKUPUNKTUR" align="text-left" />
+      <Button title="ANSIKTSBEHANDLING" href="#ANSIKTSBEHANDLING" align="text-left" />
+      <Button title="BRYN/FRANSAR" href="#BRYN/FRANSAR" align="text-left" />
       <Button title="CELLULITBEHANDLING" href="" align="text-left" />
       <Button title="FOTVÅRD" href="" align="text-left" />
       <Button title="GUA SHA" href="" align="text-left" />
@@ -36,10 +38,47 @@ import Treatment from "../components/Treatment.astro";
       <Button title="VAXNING" href="" align="text-left" />
     </div>
     <Treatment
-      image="/img/massage_3.jpg"
-      alt="Massage"
+      image="/img/akupunktur.jpg"
+      alt="Kvinna behandlas med akupunktur i ansiktet"
       title="AKUPUNKTUR"
       description="Akupunktur är en gammal kinesisk metod för smärtlindring och behandling av vissa sjukdommar. Behandlingen utförs genom att föra in tunna engångsnålar på bestämda ställen i huden och musklerna."
+    />
+    <Banner
+      title="KOSMETISK AKUPUNKTUR / NADA"
+      p1="Under denna behandling utförs kosmetisk akupunktur/NADA öronakupunktur och facial Gua Sha."
+      p2="Läs mer om behandlingen på bokningssidan."
+    />
+    <Banner
+      title="NADA ÖRONAKUPUNKTUR: BEROENDEAVVÄNJNING"
+      p1="Vi träffas först för ett samtal om behandlingen är lämplig för just dig och att lägga upp en behandlingsplan på 10 besök."
+      p2="Behandling sker med akupunkturnålar på 5 bestämda punkter i vardera öra för att motverka abstinensbesvär. Nålarna får sitta kvar ca 40 min."
+      p3="Läs mer om behandlingen på bokningssidan."
+    />
+    <Treatment
+      image="/img/thumbnail_Ansikte 1 klar.jpg"
+      alt="Kvinna får ansiktsbehandling"
+      title="ANSIKTSBEHANDLING"
+      description="Vi erbjuder en ansiktsbehandlig för just dina behov och önskemål, nedan kan du läsa mer om vilka behandlingar som finns tillgängliga."
+    />
+    <Banner
+      title="ANSIKTSBEHANDLING: LILLA"
+      p1="En skön uppfräschning för ditt ansikte. Rengöring av ansikte och hals, peeling, kort massage och mask."
+      p2="Perfekt som mellanbehandling!"
+    />
+    <Banner
+      title="ANSIKTSBEHANDLING: MAN"
+      p1="Djupgörande rengörning med mask efter hudtyp. Portömmning och en dränerande ansiktsmassage med passande olja/kräm."
+    />
+    <Banner
+    title="ANSIKTSBEHANDLING: KOPPNING"
+    p1="Behandling med glaskoppor som får igång cirkulation och utrensning i ansiktet. Ger lyster och reducerar fina linjer och rynkor. Förminskar synliga ärr och acne. "
+    p2="En skön avslappnande behandling som kan göras ofta."
+  />
+  <Treatment
+      image="/img/high-angle-professional-using-brush.jpg"
+      alt="Kvinna får lashlift"
+      title="BRYN/FRANSAR"
+      description="Hos oss kan du få färg på fransar och bryn, plock eller kanske en lashlift?"
     />
   </main>
 </Layout>
