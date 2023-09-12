@@ -3,7 +3,7 @@ interface Props {
   name: string;
   title: string;
   image: string;
-  alt: string | undefined;
+  alt?: string;
 }
 
 const { name, title, image, alt } = Astro.props;
@@ -14,7 +14,7 @@ const { name, title, image, alt } = Astro.props;
   <img
     class="rounded-full drop-shadow-lg"
     src={image}
-    alt={alt ?? "Profile Image"}
+    alt={alt ?? "Profilbild"}
   />
   <h1 class="text-off-white text-3xl font-francoisOne text-center p-4">
     {name}

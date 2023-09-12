@@ -1,0 +1,45 @@
+---
+import Nav from "../components/Nav.astro";
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+import Treatment from "../components/Treatment.astro";
+---
+
+<Layout title="Helheten Friskvård - Behandlingar">
+  <Nav />
+  <main class="px-8 pt-8">
+    <h2 class="text-off-white pb-8 text-3xl font-francoisOne">BEHANDLINGAR</h2>
+    <p class="text-lg pb-4 text-off-white font-jost">
+      Hos oss på Helheten finner du ett brett sortiment av behandlingar från
+      topp till tå.
+    </p>
+    <p class="text-lg pb-4 text-off-white font-jost">
+      Du kan läsa mer om våra behandlingar nedan. För att boka tid och se priser
+      besök oss på <a
+        class="underline"
+        href="https://www.bokadirekt.se/places/helheten-friskvard-fjaras-7695"
+        >Boka Direkt.</a
+      >
+    </p>
+    <div class="mt-8 grid gap-y-4 grid-cols-1">
+      <Button title="AKUPUNKTUR" href="" align="text-left" />
+      <Button title="ANSIKTSBEHANDLING" href="" align="text-left" />
+      <Button title="BRYN/FRANSAR" href="" align="text-left" />
+      <Button title="CELLULITBEHANDLING" href="" align="text-left" />
+      <Button title="FOTVÅRD" href="" align="text-left" />
+      <Button title="GUA SHA" href="" align="text-left" />
+      <Button title="KALAS/EVENT" href="" align="text-left" />
+      <Button title="KINESIOLOGI" href="" align="text-left" />
+      <Button title="KOPPNING" href="" align="text-left" />
+      <Button title="MANIKYR" href="" align="text-left" />
+      <Button title="MASSAGE" href="" align="text-left" />
+      <Button title="VAXNING" href="" align="text-left" />
+    </div>
+    <Treatment
+      image="/img/massage_3.jpg"
+      alt="Massage"
+      title="AKUPUNKTUR"
+      description="Akupunktur är en gammal kinesisk metod för smärtlindring och behandling av vissa sjukdommar. Behandlingen utförs genom att föra in tunna engångsnålar på bestämda ställen i huden och musklerna."
+    />
+  </main>
+</Layout>
