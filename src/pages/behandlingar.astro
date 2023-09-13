@@ -9,7 +9,7 @@ import Banner from "../components/Banner.astro";
 <Layout title="Helheten Friskvård - Behandlingar">
   <Nav />
   <main class="px-8 pt-8">
-    <h2 class="text-off-white pb-8 text-3xl font-francoisOne">BEHANDLINGAR</h2>
+    <h2 id="toppen" class="text-off-white pb-8 text-3xl font-francoisOne">BEHANDLINGAR</h2>
     <p class="text-lg pb-4 text-off-white font-jost">
       Hos oss på Helheten finner du ett brett sortiment av behandlingar från
       topp till tå.
@@ -25,17 +25,27 @@ import Banner from "../components/Banner.astro";
     </p>
     <div class="mt-8 grid gap-y-4 grid-cols-1">
       <Button title="AKUPUNKTUR" href="#AKUPUNKTUR" align="text-left" />
-      <Button title="ANSIKTSBEHANDLING" href="#ANSIKTSBEHANDLING" align="text-left" />
+      <Button
+        title="ANSIKTSBEHANDLING"
+        href="#ANSIKTSBEHANDLING"
+        align="text-left"
+      />
       <Button title="BRYN/FRANSAR" href="#BRYN/FRANSAR" align="text-left" />
-      <Button title="CELLULITBEHANDLING" href="" align="text-left" />
-      <Button title="FOTVÅRD" href="" align="text-left" />
-      <Button title="GUA SHA" href="" align="text-left" />
-      <Button title="KALAS/EVENT" href="" align="text-left" />
-      <Button title="KINESIOLOGI" href="" align="text-left" />
-      <Button title="KOPPNING" href="" align="text-left" />
-      <Button title="MANIKYR" href="" align="text-left" />
-      <Button title="MASSAGE" href="" align="text-left" />
-      <Button title="VAXNING" href="" align="text-left" />
+      <Button
+        title="CELLULITBEHANDLING"
+        href="#CELLULITBEHANDLING"
+        align="text-left"
+      />
+      <Button title="FOTVÅRD" href="#FOTVÅRD" align="text-left" />
+      <Button title="GUA SHA" href="#GUA SHA" align="text-left" />
+      <Button title="KALAS/EVENT" href="#KALAS/EVENT" align="text-left" />
+      <Button title="KINESIOLOGI" href="#KINESIOLOGI" align="text-left" />
+      <Button title="KOPPNING" href="#KOPPNING" align="text-left" />
+      <Button title="MANIKYR" href="#MANIKYR" align="text-left" />
+      <Button title="MASSAGE" href="#MASSAGE" align="text-left" />
+      <Button title="MÅ PURE CELL" href="#MÅ PURE CELL TREATMENT" align="text-left" />
+      <Button title="VAXNING" href="#VAXNING" align="text-left" />
+      <Button title="HÄLSORESURS" href="#HÄLSORESURS: KLIPPKORT" align="text-left" />
     </div>
     <Treatment
       image="/img/akupunktur.jpg"
@@ -70,15 +80,342 @@ import Banner from "../components/Banner.astro";
       p1="Djupgörande rengörning med mask efter hudtyp. Portömmning och en dränerande ansiktsmassage med passande olja/kräm."
     />
     <Banner
-    title="ANSIKTSBEHANDLING: KOPPNING"
-    p1="Behandling med glaskoppor som får igång cirkulation och utrensning i ansiktet. Ger lyster och reducerar fina linjer och rynkor. Förminskar synliga ärr och acne. "
-    p2="En skön avslappnande behandling som kan göras ofta."
-  />
-  <Treatment
+      title="ANSIKTSBEHANDLING: KOPPNING"
+      p1="Behandling med glaskoppor som får igång cirkulation och utrensning i ansiktet. Ger lyster och reducerar fina linjer och rynkor. Förminskar synliga ärr och acne. "
+      p2="En skön avslappnande behandling som kan göras ofta."
+    />
+    <Treatment
       image="/img/high-angle-professional-using-brush.jpg"
       alt="Kvinna får lashlift"
       title="BRYN/FRANSAR"
-      description="Hos oss kan du få färg på fransar och bryn, plock eller kanske en lashlift?"
+      description="Hos oss kan du få färg på fransar och bryn, plock eller också lyxa till det med en lashlift."
     />
+    <Banner
+      title="FORMNING AV BRYN"
+      p1="Plock och uppfräschning av brynen, en enklare behandling för naturliga snygga bryn."
+    />
+    <Banner
+      title="FÄRGNING OCH FORMNING AV BRYN"
+      p1="Plock och uppfräschning av brynen, avslutas med färgning efter önskemål."
+    />
+    <Banner
+      title="FÄRGNING AV FRANSAR"
+      p1="En enkel uppfräschning av utseendet får du med fint färgade fransar."
+    />
+    <Banner
+      title="FÄRG & FORM: FRANSAR & BRYN"
+      p1="Plock och uppfräschning av brynen, avslutas med färgning av fransar och bryn efter önskemål."
+    />
+    <Banner
+      title="LASH LIFT"
+      p1="Lash Lift är en mycket uppskattad semi-permanent böjning av dina egna fransar."
+      p2="Böjningen är skonsam och skadar inte fransarna, de vårdas också med med keratin i slutet på behandlingen. Färgning av fransarna ingår alltid om så önskas."
+      p3="Resultatet håller 5-12 veckor beroende på hur du sköter dem."
+    />
+    <Treatment
+      image="/img/cupping.webp"
+      alt="Koppning av ben"
+      title="CELLULITBEHANDLING"
+      description="Reducerar celluliter med hjälp av koppning."
+    />
+    <Banner
+      title="CELLULITBEHANDLING: KOPPNING"
+      p1="Koppningen ökar blodflödet och hjälper till att rensa ut slaggprodukter, därmed minskar celluliterna."
+    />
+    <Treatment
+      image="/img/fotvard.webp"
+      alt="Nagelklippning på foten"
+      title="FOTVÅRD"
+      description="Hos oss får du högklassig fotvård, kika på våra alternativ nedan för att hitta den bästa behandlingen för dig."
+    />
+    <Banner
+      title="FOTVÅRD"
+      p1="Medicinsk fotvård innebär att fotterapeuten förebygger, behandlar och lindrar den ohälsa som kan förekomma på fötterna. "
+      p2="Klassisk fotvård där du efter ett skönt bad med väldoftande olja får dina eventuella förhårdnader, liktornar, hälsprickor, nageltrång och kartnaglar behandlade. Naglar klipps och filas och dina fötter masseras mjuka med en ekologisk fotkräm anpassad just för din fot. Du får även råd angående inlägg och avlastningar."
+      p3="Lackning av naglar ingår ej. Läs gärna mer om behandlingen på Boka Direkt."
+    />
+    <Banner
+      title="FOTVÅRD FRISKVÅRD"
+      p1="En komplett fotvårdsbehandling om du vill använda ditt friskvårdsbidrag från arbetsgivaren."
+    />
+    <Banner
+      title="FOTVÅRD: PENSIONÄRSRABATT"
+      p1="En medicinsk fotvårdsbehandling till reducerat pris för dig som har fyllt 65 år eller är förtidspensionär."
+    />
+    <Banner
+      title="NAGELKLIPPNING"
+      p1="Efter ett kortare fotbad (vid behov) så klipps dina naglar. Dina nagelfalsar rensas och dina nagelband fräschas upp. Har du tjockare naglar slipas de ner. Allt bedöms och anpassas efter just dina fötters behov."
+      p2="Önskas lack så görs det i mån om tid."
+    />
+    <Treatment
+      image="/img/guasha.webp"
+      alt="Gua Sha på ryggen"
+      title="GUA SHA"
+      description="Gua Sha är en skrapteknik där man löser upp blockeringar och stagnationer i kroppen. En person kan ha mer eller mindre Sha (rodnad) beroende på omfattningen av stagnation. Vanligt är att finna Sha vid nacke, axlar och rygg."
+    />
+    <Banner
+      title="GUA SHA: 30 MIN"
+      p1="Denna skrapterapi utförs på hud och muskler med sämre cirkulation som i sin tur orsakat smärta och stelhet."
+      p2="Skrapningen sker ofta längs kroppens meridianer eller på akupunkturpunkter som står i direkt förbindelse med kroppens inre organ."
+    />
+    <Banner
+      title="GUA SHA & MASSAGE: 60 MIN"
+      p1="Denna skrapterapi utförs på hud och muskler med sämre cirkulation som i sin tur orsakat smärta och stelhet."
+      p2="Skrapningen kombineras med massage för en helhet och grundlig behandlig."
+    />
+    <Treatment
+      image="/img/spakalas1.webp"
+      alt="Två tjejer skrattar med pedikyr"
+      title="KALAS/EVENT"
+      description="På Helheten kan du boka event och spakalas utöver bokningar i Boka Direkt. För mer info och bokning hör gärna av dig till 0300-540048 eller 0702-412656."
+    />
+    <Banner
+      title="SPAKALAS"
+      p1="Dags för barnkalas? Boka in ett mysigt spakalas för dessa små livsnjutare." 
+      p2="I kalaset ingår ansiktsmask och manikyr med bling. Grönsaksdipp eller fruktspett som tilltugg med bubbelvatten eller juice samt något lite hälsosammare godis." 
+      p3="Bokning sker endast via telefon."
+    />
+    <Treatment
+      image="/img/kinesiology.webp"
+      alt="Man får kinesiologibehandling på axel"
+      title="KINESIOLOGI"
+      description="Kinesiologi, från grekiskans ord 'kinesis' är vetenskapen om människans rörelser. Den använder grundläggande principer inom anatomi, fysiologi och medicin för att analysera, bevara och förbättra människans rörlighet och funktion."
+    />
+    <Banner
+      title="KINESIOLOGIBEHANDLING: NYBESÖK"
+      p1="Under den här behandlingen kontrollerar vi bland annat att ditt nervsystem kommunicerar med kroppen på ett optimalt sätt så att muskler, organ och processer i kroppen jobbar som de ska." 
+      p2="Vi tittar på vad som stör kroppen mest,  ställer nervsystemets funktioner tillrätta och skapar förutsättningar för kroppen att komma igång med sin självläkning." 
+      p3="Nybesöket tar ca 90 minuter"
+    />
+    <Banner
+      title="KINESIOLOGIBEHANDLING: ÅTERBESÖK"
+      p1="Samma behandling som vid nybesök. Vi verifierar tidigare effekt och fortsätter med att ge kroppen ytterligare förutsättningar för fortsatt självläkning av det som stör kroppen mest." 
+      p2="Återbesöket tar ca 60 minuter"
+    />
+    <Banner
+      title="KINESIOLOGIBEHANDLING: BÄCKENBEHANDLING"
+      p1="Denna behandling fokuserar på korrigering och stabilisering av bäckenbenet och att släppa på låsningar som kan orsaka symptom så som Ischias, värk i höft och ländrygg." 
+      p2="Målet är att få igång cirkulationen kring muskulatur och leder och ge kroppen förutsättningar för självläkning."
+      p3="Behandlingen tar ca 60 minuter"
+    />
+    <Banner
+      title="KINESIOLOGIBEHANDLING: KÄKLEDSTERAPI & KÄKLEDSMASSAGE"
+      p1="Denna behandling fokuserar på massage och triggerpunktsbehandling av käkleden för att släppa på spänningar som kan orsaka symptom så som huvudvärk, att du biter ihop, gnisslar tänder, nacksmärta, svårt att svälja." 
+      p2="Målet är att få igång cirkulationen kring muskulatur och leder och ge kroppen förutsättningar för självläkning."
+      p3="Behandlingen tar ca 60 minuter"
+    />
+    <Treatment
+      image="/img/massage_2.webp"
+      alt="Koppning på ryggen av en dam"
+      title="KOPPNING"
+      description="Koppning är en djupgående kroppsbehandling som rensar kroppen från slaggprodukter. Den mjukar upp bindväv och muskler, förbättrar flödet i lymf- och blodsystem. Kopporna har ett unikt sätt att skapa ett vakuum och därmed suga upp både muskelmassa och bindväv. "
+    />
+    <Banner
+      title="DELKROPPSMASSAGE: KOPPNING"
+      p1="Detta är en djupgående massage som kombineras med kopporna och är mycket skonsam för kroppen." 
+      p2="Behandlingen tar ca 30 minuter och fokuseras på en del av kroppen."
+    />
+    <Banner
+      title="HELKROPPSMASSAGE: KOPPNING"
+      p1="Precis som delkroppskoppningen är detta är en djupgående massage som kombineras med kopporna och är mycket skonsam för kroppen." 
+      p2="Behandlingen tar ca 60 minuter och fokuserar på hela kroppen."
+    />
+    <Treatment
+      image="/img/nails.webp"
+      alt="Nagellack målas på en hand"
+      title="MANIKYR"
+      description="Olika former av manikyr, du får välja på ett stort utbud fina gellack."
+    />
+    <Banner
+      title="BORTTAGNING AV GELLACK"
+      p1="Borttagning av Gellack, filning av naglar ingår därefter." 
+      p2="Har du byggda naglar med material från annan salong? Skriv gärna det i bokningen."
+      p3="Behandlingen tar ca 30 min."
+    />
+    <Banner
+      title="MANIKYR MED GELLACK"
+      p1="Manikyr med gellack som härdas i UV-lampa, behandlingen sker på den naturliga nageln utan förlängning." 
+      p2="En eller flera färger, samt borttagning av gammalt gellack ingår."
+      p3="Behandlingen tar ca 75 min."
+    />
+    <Banner
+      title="SPAMANIKYR"
+      p1="Lyxig manikyr med handskrubb, mask och arm/handmassage. Behandlingen sker på den naturliga nageln utan förlängning." 
+      p2="En eller flera färger, samt borttagning av gammalt gellack ingår. "
+      p3="Behandlingen tar ca 90 min."
+    />
+    <Treatment
+      image="/img/massage_male.webp"
+      alt="Man får ryggmassage"
+      title="MASSAGE"
+      description="Hos oss på Helheten får du massage av hög kvalité, anpassad efter dina behov och önskemål. Med många års erfarenhet, och ett brett utbud behandlingar så finns det något för alla."
+    />
+    <Banner
+      title="DELKROPPSMASSAGE: LILLA"
+      p1="Skön klassisk rygg, nacke och axelmassage för spända muskler." 
+      p2="Behandlingen tar ca 30 min."
+    />
+    <Banner
+      title="DELKROPPSMASSAGE: MELLAN"
+      p1="Skön klassisk rygg, nacke och axelmassage för spända muskler." 
+      p2="Behandlingen tar ca 45 min."
+    />
+    <Banner
+      title="DELKROPPSMASSAGE: HOT STONE"
+      p1="Hot Stone massage med varma lavastenar läggs skönt längs ryggen. Ger skön avslappning mentalt och kroppsligt."
+      p2="Med värme och aromaolja kan musklerna masseras utan att det smärtar ifall du har ont. Stenmassage är renande och energihöjande och skänker avslappning på djupet."
+      p3="Massagen tar ca 45 min."
+    />
+    <Banner
+      title="FIBROMASSAGE: LILLA"
+      p1="Mjuk form av taktil massage för dig med värk, tex Fibromyalgi, värk i leder."
+      p2="Här får du uppleva en avkopplande beröringsmassage utan knådning av muskler."
+      p3="Massagen tar ca 30 min."
+    />
+    <Banner
+      title="FIBROMASSAGE: MELLAN"
+      p1="Mjuk form av taktil massage för dig med värk, tex Fibromyalgi, värk i leder."
+      p2="Här får du uppleva en avkopplande beröringsmassage utan knådning av muskler."
+      p3="Massagen tar ca 45 min."
+    />
+    <Banner
+      title="FIBROMASSAGE: STORA"
+      p1="Mjuk form av taktil massage för dig med värk, tex Fibromyalgi, värk i leder."
+      p2="Här får du uppleva en avkopplande beröringsmassage utan knådning av muskler."
+      p3="Massagen tar ca 60 min."
+    />
+    <Banner
+      title="FIBROMASSAGE: EXTRA STORA"
+      p1="Mjuk form av taktil massage för dig med värk, tex Fibromyalgi, värk i leder."
+      p2="Här får du uppleva en avkopplande beröringsmassage utan knådning av muskler i en längre variant."
+      p3="Massagen tar ca 120 min."
+    />
+    <Banner
+      title="HELKROPPSMASSAGE"
+      p1="Klassisk Helkroppsmassage. Här använder vi de klassiska greppen: effleurage, petrissage, friktioner och tapotement."
+      p2="Massagen kan ges både mjuk och som sportmassage. Den hjälper till att mjuka upp spända muskler, håller dem avslappnade, smidiga och elastiska.  Ökar blodcirkulation, stärker immunförsvaret, rensar lymfsystemet, har positiv och lugnande inverkan på hormonsystemet och på nervsystemet."
+      p3="Massagen tar ca 60 min."
+    />
+    <Banner
+      title="HELKROPPSMASSAGE: HOT STONE"
+      p1="Skön mjuk avslappnande massage med varma stenar som läggs på rygg, armar, ben."
+      p2="En underbar kroppsbehandling som sträcker sig över 5000 år bakåt i tiden och som sedan urminnes tider använts i både kinesisk, indisk och mayaindiansk kultur..."
+      p3="Massagen tar ca 60 min."
+    />
+    <Banner
+      title="MASSAGETERAPI"
+      p1="I denna massageterapeutiska behandling fokuseras behandlingen på ett specifikt muskulärt område, eller specifik problematik i kroppen. Problematiken kan tex. vara smärta och förhindrar rörelseförmåga."
+      p2="Denna resultatinriktade behandling inkluderar massage, triggerpunktsbehandling, revolving, positioneringar, muskeltöjning samt avslappningstekniker. Kunden kan även få råd om hur den bäst underhåller sin kropp utefter sin specifika problematik."
+      p3="Behandlingen tar ca 60 min."
+    />
+    <Banner
+      title="RAINDROP MASSAGE"
+      p1="Regndroppsmassage är en mjuk & varsam SPA-behandling som är mycket effektiv genom kraften i terapeutiska, 100 %  eteriska oljor."
+      p2="Regndroppsteknik/massage är en kombination av lätt beröring och massage med kraften i eteriska oljor av allra högsta terapeutiska kvalitet. Dessa oljor läggs på kroppens reflexpunkter, både på ryggen och under fotsulorna. De masseras sedan in på ryggen, därefter får du en värmeinpackning. Eftersom de eteriska oljorna även verkar på känslocentrum (limbiska systemet) i hjärnan via doftsinnet, är behandlingen också välgörande för att avhjälpa stress, oro och för att åstadkomma känslomässig läkning."
+      p3="Behandlingen tar ca 60 min, läs gärna mer om Raindrop Massagen på Boka Direkt."
+    />
+    <Banner
+      title="AROMAMASSAGE MED ETERISKA OLJOR"
+      p1="Aromamassage är en avslappnande och mjuk massage blandat med aromaterapi. Under massagen används eteriska oljor både till huden men även för doftsinnet. De eteriska oljorna har flera positiva egenskaper. Vilka oljor som används beror på vad just din kropp och ditt sinne behöver."
+      p2="Massagen tar ca 30 min."
+    />
+    <Banner
+      title="TOPP TILL TÅ"
+      p1="Skäm bort hela dig!"
+      p2="Topp till Tå paketet ger dig en avkopplande helkroppsmassage med väldoftande olja. En känsla av avkoppling och spa får du genom skön ansiksmassage, peeling och en passande anisktsmask."
+      p3="Behandlingen tar ca 90 min."
+    />
+    <Banner
+      title="MASSAGE FÖR PAR"
+      p1="Uppmjukning och avkoppling för två - ta med dig din partner eller en vän!"
+      p2="Klassisk helkroppsmassage som utförs med olja. Vi är två massörer med många års erfarenhet som behandlar er på bänk sida vid sida."
+      p3="Behandlingen tar ca 60 min och kan endast bokas via telefon. Frågor och bokning: 0300-540048."
+    />
+    <Treatment
+      image="/img/pct.webp"
+      alt="Maria Åkerberg pure cell behandling"
+      title="MÅ PURE CELL TREATMENT"
+      description="Med Maria Åkerbergs nya unika behandling, MÅ Pure Cell Treatment, tar vi oss ännu ett steg in i framtiden och erbjuder dig en unik behandling med levande stamceller från Rosenrot."
+    />
+    <Banner
+      title="PURE CELL TREATMENT"
+      p1="Den här återuppbyggande, djupverkande ansiktsbehandlingen påskyndar hudens naturliga återhämtning och stimulerar cellförnyelse med hjälp av den näringsrika livskraften i Rosenrot."
+      p2="Behandlingen ger en rad positiva effekter på din hud såsom ökad cellförnyelse, gör dina egna hudceller mer motståndskraftiga, Stimulerar kollagenproduktionen, ger lyster, ökar vitalitet och spänst och ger omedelbara resultat men är också verksam på lång sikt."
+      p3="Passar alla hudtyper."
+    />
+    <Treatment
+      image="/img/waxing.webp"
+      alt="Kvinna får ben vaxat"
+      title="VAXNING"
+      description="Vi erbjuder en rad olika vaxningsbehandlingar, läs mer om dessa nedan."
+    />
+    <Banner
+      title="VAXNING: ARMAR"
+      p1="Vaxning av hår på armarna."
+      p2="Behandlingen tar ca 30 min."
+    />
+    <Banner
+      title="VAXNING: UNDER ARMAR"
+      p1="Vaxning av hår under armarna."
+      p2="Behandlingen tar ca 15 min."
+    />
+    <Banner
+      title="VAXNING: HALVA BEN"
+      p1="Vaxning av hår på benen upp till och med käna."
+      p2="Behandlingen tar ca 40 min."
+    />
+    <Banner
+      title="VAXNING: HELA BENEN"
+      p1="Vaxning av hår på hela benen, inklusive lår."
+      p2="Behandlingen tar ca 45 min."
+    />
+    <Banner
+      title="VAXNING: BIKINI"
+      p1="Vaxning av hår på bikinilinjen."
+      p2="Behandlingen tar ca 30 min."
+    />
+    <Banner
+      title="VAXNING: HELA BEN & BIKINI"
+      p1="Vaxning av hår på hela benen, inklusive lår och bikinilinjen."
+      p2="Behandlingen tar ca 60 min."
+    />
+    <Banner
+      title="VAXNING: RYGG"
+      p1="Vaxning av hår på hela ryggen."
+      p2="Behandlingen tar ca 50 min."
+    />
+    <Banner
+      title="VAXNING: BRÖST & MAGE"
+      p1="Vaxning av hår på bröstet och magen."
+      p2="Behandlingen tar ca 50 min."
+    />
+    <Banner
+      title="VAXNING: ÖVERLÄPP & HAKA"
+      p1="Vaxning av hår runt munnen, haka och ovanför munnen."
+      p2="Behandlingen tar ca 30 min."
+    />
+    <Treatment
+      image="/img/massage.webp"
+      alt="Massage"
+      title="HÄLSORESURS: KLIPPKORT"
+      description="För dig som har friskvård genom Hälsoresurs erbjuder vi massage."
+    />
+    <Banner
+      title="HÄLSORESURS: LILLA"
+      p1="Klassisk massage rygg, nacke och axlar för dig som har friskvård genom Hälsoresurs"
+      p2="Massagen tar ca 25 min."
+    />
+    <Banner
+      title="HÄLSORESURS: MELLAN"
+      p1="Klassisk massage rygg, nacke och axlar för dig som har friskvård genom Hälsoresurs"
+      p2="Massagen tar ca 40 min."
+    />
+    <Banner
+      title="HÄLSORESURS: STORA"
+      p1="Klassisk massage rygg, nacke och axlar för dig som har friskvård genom Hälsoresurs"
+      p2="Massagen tar ca 50 min."
+    />
+    <div class="h-16"></div>
+    <Button title="TILLBAKA TILL TOPPEN" href="#toppen" align="text-center"></>
   </main>
 </Layout>
