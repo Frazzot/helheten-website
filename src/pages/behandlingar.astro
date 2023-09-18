@@ -9,11 +9,18 @@ import Banner from "../components/Banner.astro";
 <Layout title="Helheten Friskvård - Behandlingar">
   <Nav />
   <main class="px-8 pt-8">
-    <h2 id="toppen" class="text-off-white pb-8 text-3xl font-francoisOne">BEHANDLINGAR</h2>
+    <h2 id="toppen" class="text-off-white pb-8 text-3xl font-francoisOne">
+      BEHANDLINGAR
+    </h2>
     <p class="text-lg pb-4 text-off-white font-jost">
       Hos oss på Helheten finner du ett brett sortiment av behandlingar från
       topp till tå.
     </p>
+    <img
+      class="absolute w-screen sm:hidden -translate-x-8 -z-10"
+      src="/img/deco2.webp"
+      alt=""
+    />
     <p class="text-lg pb-4 text-off-white font-jost">
       Här kan du läsa mer om våra behandlingar, använd direktlänkarna nedan för
       att komma till avsittet med behandlingar du vill läsa om. För att boka tid
@@ -36,16 +43,56 @@ import Banner from "../components/Banner.astro";
         href="#CELLULITBEHANDLING"
         align="text-left"
       />
-      <Button title="FOTVÅRD" href="#FOTVÅRD" align="text-left" />
-      <Button title="GUA SHA" href="#GUA SHA" align="text-left" />
-      <Button title="KALAS/EVENT" href="#KALAS/EVENT" align="text-left" />
-      <Button title="KINESIOLOGI" href="#KINESIOLOGI" align="text-left" />
-      <Button title="KOPPNING" href="#KOPPNING" align="text-left" />
-      <Button title="MANIKYR" href="#MANIKYR" align="text-left" />
-      <Button title="MASSAGE" href="#MASSAGE" align="text-left" />
-      <Button title="MÅ PURE CELL" href="#MÅ PURE CELL TREATMENT" align="text-left" />
-      <Button title="VAXNING" href="#VAXNING" align="text-left" />
-      <Button title="HÄLSORESURS" href="#HÄLSORESURS: KLIPPKORT" align="text-left" />
+      <Button 
+        title="FOTVÅRD" 
+        href="#FOTVÅRD" 
+        align="text-left" 
+      />
+      <Button 
+        title="GUA SHA" 
+        href="#GUA SHA" 
+        align="text-left" 
+      />
+      <Button 
+        title="KALAS/EVENT" 
+        href="#KALAS/EVENT" 
+        align="text-left" 
+      />
+      <Button 
+        title="KINESIOLOGI" 
+        href="#KINESIOLOGI" 
+        align="text-left" 
+      />
+      <Button 
+        title="KOPPNING" 
+        href="#KOPPNING" 
+        align="text-left" 
+      />
+      <Button 
+        title="MANIKYR" 
+        href="#MANIKYR" 
+        align="text-left" 
+      />
+      <Button 
+        title="MASSAGE" 
+        href="#MASSAGE" 
+        align="text-left" 
+      />
+      <Button
+        title="MÅ PURE CELL"
+        href="#MÅ PURE CELL TREATMENT"
+        align="text-left"
+      />
+      <Button 
+        title="VAXNING" 
+        href="#VAXNING" 
+        align="text-left"
+      />
+      <Button
+        title="HÄLSORESURS"
+        href="#HÄLSORESURS: KLIPPKORT"
+        align="text-left"
+      />
     </div>
     <Treatment
       image="/img/akupunktur.jpg"
@@ -171,8 +218,8 @@ import Banner from "../components/Banner.astro";
     />
     <Banner
       title="SPAKALAS"
-      p1="Dags för barnkalas? Boka in ett mysigt spakalas för dessa små livsnjutare." 
-      p2="I kalaset ingår ansiktsmask och manikyr med bling. Grönsaksdipp eller fruktspett som tilltugg med bubbelvatten eller juice samt något lite hälsosammare godis." 
+      p1="Dags för barnkalas? Boka in ett mysigt spakalas för dessa små livsnjutare."
+      p2="I kalaset ingår ansiktsmask och manikyr med bling. Grönsaksdipp eller fruktspett som tilltugg med bubbelvatten eller juice samt något lite hälsosammare godis."
       p3="Bokning sker endast via telefon."
     />
     <Treatment
@@ -183,24 +230,24 @@ import Banner from "../components/Banner.astro";
     />
     <Banner
       title="KINESIOLOGIBEHANDLING: NYBESÖK"
-      p1="Under den här behandlingen kontrollerar vi bland annat att ditt nervsystem kommunicerar med kroppen på ett optimalt sätt så att muskler, organ och processer i kroppen jobbar som de ska." 
-      p2="Vi tittar på vad som stör kroppen mest,  ställer nervsystemets funktioner tillrätta och skapar förutsättningar för kroppen att komma igång med sin självläkning." 
+      p1="Under den här behandlingen kontrollerar vi bland annat att ditt nervsystem kommunicerar med kroppen på ett optimalt sätt så att muskler, organ och processer i kroppen jobbar som de ska."
+      p2="Vi tittar på vad som stör kroppen mest,  ställer nervsystemets funktioner tillrätta och skapar förutsättningar för kroppen att komma igång med sin självläkning."
       p3="Nybesöket tar ca 90 minuter"
     />
     <Banner
       title="KINESIOLOGIBEHANDLING: ÅTERBESÖK"
-      p1="Samma behandling som vid nybesök. Vi verifierar tidigare effekt och fortsätter med att ge kroppen ytterligare förutsättningar för fortsatt självläkning av det som stör kroppen mest." 
+      p1="Samma behandling som vid nybesök. Vi verifierar tidigare effekt och fortsätter med att ge kroppen ytterligare förutsättningar för fortsatt självläkning av det som stör kroppen mest."
       p2="Återbesöket tar ca 60 minuter"
     />
     <Banner
       title="KINESIOLOGIBEHANDLING: BÄCKENBEHANDLING"
-      p1="Denna behandling fokuserar på korrigering och stabilisering av bäckenbenet och att släppa på låsningar som kan orsaka symptom så som Ischias, värk i höft och ländrygg." 
+      p1="Denna behandling fokuserar på korrigering och stabilisering av bäckenbenet och att släppa på låsningar som kan orsaka symptom så som Ischias, värk i höft och ländrygg."
       p2="Målet är att få igång cirkulationen kring muskulatur och leder och ge kroppen förutsättningar för självläkning."
       p3="Behandlingen tar ca 60 minuter"
     />
     <Banner
       title="KINESIOLOGIBEHANDLING: KÄKLEDSTERAPI & KÄKLEDSMASSAGE"
-      p1="Denna behandling fokuserar på massage och triggerpunktsbehandling av käkleden för att släppa på spänningar som kan orsaka symptom så som huvudvärk, att du biter ihop, gnisslar tänder, nacksmärta, svårt att svälja." 
+      p1="Denna behandling fokuserar på massage och triggerpunktsbehandling av käkleden för att släppa på spänningar som kan orsaka symptom så som huvudvärk, att du biter ihop, gnisslar tänder, nacksmärta, svårt att svälja."
       p2="Målet är att få igång cirkulationen kring muskulatur och leder och ge kroppen förutsättningar för självläkning."
       p3="Behandlingen tar ca 60 minuter"
     />
@@ -212,12 +259,12 @@ import Banner from "../components/Banner.astro";
     />
     <Banner
       title="DELKROPPSMASSAGE: KOPPNING"
-      p1="Detta är en djupgående massage som kombineras med kopporna och är mycket skonsam för kroppen." 
+      p1="Detta är en djupgående massage som kombineras med kopporna och är mycket skonsam för kroppen."
       p2="Behandlingen tar ca 30 minuter och fokuseras på en del av kroppen."
     />
     <Banner
       title="HELKROPPSMASSAGE: KOPPNING"
-      p1="Precis som delkroppskoppningen är detta är en djupgående massage som kombineras med kopporna och är mycket skonsam för kroppen." 
+      p1="Precis som delkroppskoppningen är detta är en djupgående massage som kombineras med kopporna och är mycket skonsam för kroppen."
       p2="Behandlingen tar ca 60 minuter och fokuserar på hela kroppen."
     />
     <Treatment
@@ -228,19 +275,19 @@ import Banner from "../components/Banner.astro";
     />
     <Banner
       title="BORTTAGNING AV GELLACK"
-      p1="Borttagning av Gellack, filning av naglar ingår därefter." 
+      p1="Borttagning av Gellack, filning av naglar ingår därefter."
       p2="Har du byggda naglar med material från annan salong? Skriv gärna det i bokningen."
       p3="Behandlingen tar ca 30 min."
     />
     <Banner
       title="MANIKYR MED GELLACK"
-      p1="Manikyr med gellack som härdas i UV-lampa, behandlingen sker på den naturliga nageln utan förlängning." 
+      p1="Manikyr med gellack som härdas i UV-lampa, behandlingen sker på den naturliga nageln utan förlängning."
       p2="En eller flera färger, samt borttagning av gammalt gellack ingår."
       p3="Behandlingen tar ca 75 min."
     />
     <Banner
       title="SPAMANIKYR"
-      p1="Lyxig manikyr med handskrubb, mask och arm/handmassage. Behandlingen sker på den naturliga nageln utan förlängning." 
+      p1="Lyxig manikyr med handskrubb, mask och arm/handmassage. Behandlingen sker på den naturliga nageln utan förlängning."
       p2="En eller flera färger, samt borttagning av gammalt gellack ingår. "
       p3="Behandlingen tar ca 90 min."
     />
@@ -252,12 +299,12 @@ import Banner from "../components/Banner.astro";
     />
     <Banner
       title="DELKROPPSMASSAGE: LILLA"
-      p1="Skön klassisk rygg, nacke och axelmassage för spända muskler." 
+      p1="Skön klassisk rygg, nacke och axelmassage för spända muskler."
       p2="Behandlingen tar ca 30 min."
     />
     <Banner
       title="DELKROPPSMASSAGE: MELLAN"
-      p1="Skön klassisk rygg, nacke och axelmassage för spända muskler." 
+      p1="Skön klassisk rygg, nacke och axelmassage för spända muskler."
       p2="Behandlingen tar ca 45 min."
     />
     <Banner
@@ -416,6 +463,6 @@ import Banner from "../components/Banner.astro";
       p2="Massagen tar ca 50 min."
     />
     <div class="h-16"></div>
-    <Button title="TILLBAKA TILL TOPPEN" href="#toppen" align="text-center"></>
+    <Button title="TILLBAKA TILL TOPPEN" href="#toppen" align="text-center" />
   </main>
 </Layout>
