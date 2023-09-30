@@ -9,7 +9,8 @@ import { Icon } from "astro-icon";
 <div
   class="relative flex flex-row bg-sage w-screen h-96 z-2 shadow-xl items-stretch p-8 gap-4"
 >
-  <div class="grow-0 flex flex-col">
+  <div class="lg:basis-1/4"></div>
+  <div class="grow-0 flex flex-col lg:basis-1/4">
     <p class="px-2 text-lg text-off-white mb-8 font-jost font-bold">
       Välkommen till oss!
     </p>
@@ -30,7 +31,7 @@ import { Icon } from "astro-icon";
     </div>
   </div>
 
-  <div class="google-map grow relative">
+  <div class="google-map grow relative lg:basis-2/3">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2146.024751278488!2d12.169250977297134!3d57.46088145915438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464fe703bf3aceb1%3A0x41cc253a697f89cf!2sHelheten%20Friskv%C3%A5rd!5e0!3m2!1ssv!2sse!4v1694040412190!5m2!1ssv!2sse"
       style="border:0;"
@@ -40,6 +41,7 @@ import { Icon } from "astro-icon";
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
+  <div class="lg:basis-1/4"></div>
 </div>
 
 <style lang="css">
