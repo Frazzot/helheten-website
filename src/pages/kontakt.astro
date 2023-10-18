@@ -6,44 +6,50 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Helheten Friskvård - Kontakt">
   <Nav />
   <main class="px-8 pt-8">
-    <h2 class="text-off-white pb-8 text-3xl font-francoisOne">KONTAKTA OSS</h2>
-    <p class="text-lg pb-4 text-off-white font-jost">
-      Har du frågor eller funderingar?
-    </p>
-    <p class="text-lg pb-4 text-off-white font-jost">
-      Tveka inte att kontakta oss! Lättast når du oss via salongens telefon på <span
-        class="underline">0300-540048</span
-      >
-       , det går jättebra att tala in ett meddelande om vi inte kan ta emot
-      samtalet.
-    </p>
-    <p class="text-lg pb-4 text-off-white font-jost">
-      Det går också bra att maila oss på <span class="underline"
-        >helhetenfriskvard@gmail.com.</span
-      >
-    </p>
+    <div class="lg:flex">
+      <div class="lg:w-1/4"></div>
+      <div class="lg:w-1/2">
+        <h2 class="text-off-white pb-8 text-3xl font-francoisOne">KONTAKTA OSS</h2>
+        <p class="text-lg pb-4 text-off-white font-jost">
+          Har du frågor eller funderingar?
+        </p>
+        <p class="text-lg pb-4 text-off-white font-jost">
+          Tveka inte att kontakta oss! Lättast når du oss via salongens telefon på <span
+            class="underline">0300-540048</span>, det går jättebra att tala in ett meddelande om vi inte kan ta emot samtalet.
+        </p>
+        <p class="text-lg pb-4 text-off-white font-jost">
+          Det går också bra att maila oss på <span class="underline">helhetenfriskvard@gmail.com.</span>
+        </p>
+      </div>
+      <div class="lg:w-1/4"></div>
+    </div>
+    
   </main>
-  <div id="banner" class="w-screen h-auto mt-8">
-    <h2 class="text-off-white p-8 text-3xl font-francoisOne">FAQ</h2>
-    <ul class="text-off-white mx-8 pb-8">
-      <li class="text-lg pb-4 text-off-white font-jost">
-        ◦ Salongens öppettider varierar, butiken är öppen när personal är på
-        plats. <span class="font-bold"
-          >Bokningsbara tider ses i <a
-            class="underline"
-            href="https://www.bokadirekt.se/places/helheten-friskvard-fjaras-7695"
-            >Boka Direkt.</a
-          ></span
-        >
-      </li>
-      <li class="text-lg pb-4 text-off-white font-jost">
-        ◦ Bokning av lokal, spakalas eller liknande sker via telefon.
-      </li>
-      <li class="text-lg pb-4 text-off-white font-jost">
-        ◦ För mer nyheter om evenemang samt behandlings- och butikserbjudanden
-        kika gärna på vår facebook sida.
-      </li>
-    </ul>
+  <div id="banner" class="w-screen h-auto mt-8 lg:flex">
+    <div class="lg:w-1/4"></div>
+    <div class="lg:w-1/2">
+      <h2 class="text-off-white p-8 text-3xl font-francoisOne">FAQ</h2>
+      <ul class="text-off-white mx-8 pb-8">
+        <li class="text-lg pb-4 text-off-white font-jost">
+          ◦ Salongens öppettider varierar, butiken är öppen när personal är på
+          plats. <span class="font-bold"
+            >Bokningsbara tider ses i <a
+              class="underline"
+              href="https://www.bokadirekt.se/places/helheten-friskvard-fjaras-7695"
+              >Boka Direkt.</a
+            ></span
+          >
+        </li>
+        <li class="text-lg pb-4 text-off-white font-jost">
+          ◦ Bokning av lokal, spakalas eller liknande sker via telefon.
+        </li>
+        <li class="text-lg pb-4 text-off-white font-jost">
+          ◦ För mer nyheter om evenemang samt behandlings- och butikserbjudanden
+          kika gärna på vår facebook sida.
+        </li>
+      </ul>
+    </div>
+    <div class="lg:w-1/4"></div>   
   </div>
 </Layout>
 

@@ -3,14 +3,15 @@ interface Props {
   title: string;
   href: string;
   align?: "text-left" | "text-center" | "text-right";
+  hoverTransform?: "transition-transform hover:scale-110 origin-left" | "transition-transform hover:scale-110" | "";
 }
 
-const { title, href, align} = Astro.props;
+const { title, href, align, hoverTransform} = Astro.props;
 ---
 
 <a href={href}>
   <div class="bg-sage rounded-md drop-shadow-lg py-4 px-4">
-    <p class=`text-off-white text-3xl ${align ?? "text-center"} font-francoisOne`>
+    <p class=`text-off-white text-3xl ${align ?? "text-center"} font-francoisOne ${hoverTransform ?? ""}`>
       {title}
     </p>
   </div>

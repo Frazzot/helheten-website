@@ -10,12 +10,14 @@ const { image, alt, title, description } = Astro.props;
 ---
 
 <div class="mt-16">
-  <img
-    id={title}
-    class="rounded-md"
-    src={image}
-    alt={alt ?? "Beskrivande behandlingsbild"}
-  />
+  <div class="lg:w-full lg:grid lg:justify-items-center">
+    <img
+      id={title}
+      class="rounded-md"
+      src={image}
+      alt={alt ?? "Beskrivande behandlingsbild"}
+    />
+  </div>
   <h1 class="text-off-white text-3xl font-francoisOne py-4">{title}</h1>
   <p class="text-lg pb-4 text-off-white font-jost">{description}</p>
 </div>
