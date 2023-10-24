@@ -9,9 +9,12 @@ import Layout from "../layouts/Layout.astro";
   <Nav />
   <main class="px-8 pt-8">
     <div class="h-12"></div>
-    <div id="om" class="lg:flex md:flex-row md:justify-center lg:bg-[#5C6855] lg:p-16 lg:shadow-md lg:-translate-x-8 lg:w-screen">
-      <div class="lg:w-1/6"></div>
-      <div class="lg:w-1/3">
+    <div
+      id="om"
+      class="lg:flex md:flex-row md:justify-center lg:bg-neutral-800 lg:p-16 lg:shadow-md lg:max-w-screen-xl lg:mx-auto"
+    >
+
+      <div class="">
         <h2 class="text-off-white pb-8 text-3xl font-francoisOne">OM OSS</h2>
         <p class="text-lg lg:text-xl pb-4 text-off-white font-jost">
           Möt oss på Helheten Friskvård!
@@ -27,162 +30,212 @@ import Layout from "../layouts/Layout.astro";
           vilka vi är, hur ni kontaktar och bokar tid hos oss.
         </p>
       </div>
-      <div class="lg:w-1/3">
+      <div class="lg:w-2/3">
         <img class="rounded-md" src="/img/outside.webp" alt="Helheten utsida" />
       </div>
-      <div class="lg:w-1/6"></div>
+
     </div>
-    <div class="h-12 w-screen -translate-x-8"></div>
+    <div class="h-12 lg:h-8"></div>
     <div id="about">
-      <div>
-        <Profile
-        name="KARIN FRANZÉN KARLSSON"
-        title="Ägare av Helheten Friskvård"
-        image="/img/karin.jpg"
-        alt="Profilbild Karin"
-      />
-      <div class="md:flex md:flex-row">
-        <div class="md:w-1/4"></div>
-        <div class="md:w-1/2">
-          <div class="mt-12 md:mt-4">
-            <p class="text-lg lg:text-xl text-off-white font-jost md:text-center">
-              Ekologisk massage- och hudterapeut. Även utbildad undersköterska.
-            </p>
-            <p class="text-lg lg:text-xl text-off-white font-jost pt-4 md:text-center">
-              Jag erbjuder ett brett sortiment av olika massage- och
-              hudvårdsbehandlingar, bl.a klassisk massage, koppning, Gua Sha vaxning
-              och ansiktsbehandlingar.
-            </p>
-            <p class="text-lg lg:text-xl text-off-white font-jost pt-4 md:text-center">
-              Utöver detta gör jag även färg & form av bryn/fransar samt manikyr med
-              gellack.
-            </p>
-            <p class="text-lg lg:text-xl text-off-white font-jost pt-4 md:text-center">
-              Varmt välkommen att boka din behandling hos mig!
-            </p>
-          </div>
-          <div class="h-8 md:h-12"></div>
-          <Button
-            title="BOKA TID KARIN"
-            href="https://www.bokadirekt.se/places/helheten-friskvard-fjaras-7695?sr=7E1FBAC7_ABD0_4395_B5D4_23319F4B6CB4"
-            hoverTransform="transition-transform hover:scale-110"
+      <div class="lg:grid lg:grid-cols-3 lg:gap-12 lg:max-w-screen-xl lg:mx-auto lg:justify-center">
+        <div id="karin">
+          <Profile
+            name="KARIN FRANZÉN KARLSSON"
+            title="Ägare av Helheten Friskvård"
+            image="/img/karin.jpg"
+            alt="Profilbild Karin"
           />
-        </div>
-        <div class="md:w-1/4"></div>
-      </div>
-    
-      <img
-        class="absolute w-screen sm:hidden -translate-x-8"
-        src="/img/deco2.webp"
-        alt=""
-      />
-      <Profile
-        name="ANETTE BLOMEDAL"
-        title="Medicinsk fotterapeut"
-        image="/img/anette.jpg"
-        alt="Profilbild Karin"
-      />
-      <div class="md:flex md:flex-row">
-        <div class="md:w-1/4"></div>
-        <div class="md:w-1/2">
-          <div class="mt-12 md:mt-4">
-            <p class="text-lg lg:text-xl md:text-center text-off-white font-jost">
-              Medicinsk fotterapeut & utbildad undersköterska.
-            </p>
-            <p class="text-lg lg:text-xl md:text-center text-off-white font-jost pt-4">
-              Välkommen till AB’s fotvård, hos mig kan du boka allt mellan en klassisk
-              fotvårdsbehandling till medicinsk fotvård. Du får tips och råd om hur du
-              sköter dina fötter på bästa sätt.
-            </p>
-            <p class="text-lg lg:text-xl md:text-center text-off-white font-jost pt-4">
-              Jag tar emot remisser från både region Halland och Västra
-              Götalansregionen.
-            </p>
-            <p class="text-lg lg:text-xl md:text-center text-off-white font-jost pt-4">
-              Varmt välkommen att boka din behandling hos mig!
-            </p>
+          <div class="md:flex md:flex-row">
+
+            <div class="">
+              <div class="mt-12 md:mt-4">
+                <p
+                  class="text-lg lg:text-xl text-off-white font-jost md:text-center"
+                >
+                  Ekologisk massage- och hudterapeut. Även utbildad
+                  undersköterska.
+                </p>
+                <p
+                  class="text-lg lg:text-xl text-off-white font-jost pt-4 md:text-center"
+                >
+                  Jag erbjuder ett brett sortiment av olika massage- och
+                  hudvårdsbehandlingar, bl.a klassisk massage, koppning, Gua Sha
+                  vaxning och ansiktsbehandlingar.
+                </p>
+                <p
+                  class="text-lg lg:text-xl text-off-white font-jost pt-4 md:text-center"
+                >
+                  Utöver detta gör jag även färg & form av bryn/fransar samt
+                  manikyr med gellack.
+                </p>
+                <p
+                  class="text-lg lg:text-xl text-off-white font-jost pt-4 md:text-center"
+                >
+                  Varmt välkommen att boka din behandling hos mig!
+                </p>
+              </div>
+              <div class="h-8 md:h-12"></div>
+              <Button
+                title="BOKA TID KARIN"
+                href="https://www.bokadirekt.se/places/helheten-friskvard-fjaras-7695?sr=7E1FBAC7_ABD0_4395_B5D4_23319F4B6CB4"
+                hoverTransform="transition-transform hover:scale-110"
+              />
+            </div>
+
           </div>
-          <div class="h-8 md:h-12"></div>
-          <Button
-            title="BOKA TID ANETTE"
-            href="https://www.bokadirekt.se/places/helheten-friskvard-fjaras-7695?sr=59173687_5C90_464A_B138_7F22823D874D"
-            hoverTransform="transition-transform hover:scale-110"
-          />
         </div>
-        <div class="md:w-1/4"></div>
-      </div>
-      
-      <Profile
-        name="PIA HERRSTRÖMER"
-        title="Kinesiolog"
-        image="/img/pia.jpeg"
-        alt="Profilbild Pia"
-      />
-      <div class="md:flex md:flex-row">
-        <div class="md:w-1/4"></div>
-        <div class="md:w-1/2">
-          <div class="mt-12 md:mt-4">
-            <p class="text-lg lg:text-xl md:text-center text-off-white font-jost">
-              Kinesiologi och rörelseterapi.
-            </p>
-            <p class="text-lg lg:text-xl md:text-center text-off-white font-jost pt-4">
-              Jag identifierar och lossar på hinder i kroppens rörelsemönster. Utifrån
-              detta återskapas förutsättningar för kroppen att självläka.
-            </p>
-            <p class="text-lg lg:text-xl md:text-center text-off-white font-jost pt-4 font-bold">
-              Hulda-Pia Omtanke AB
-            </p>
-            <p class="text-lg lg:text-xl md:text-center text-off-white font-jost pt-4">
-              Varmt välkommen att boka din behandling hos mig!
-            </p>
+        <img
+          class="absolute w-screen sm:hidden -translate-x-8"
+          src="/img/deco2.webp"
+          alt=""
+        />
+        <div id="anette" class="relative">
+          <Profile
+            name="ANETTE BLOMEDAL"
+            title="Medicinsk fotterapeut"
+            image="/img/anette.jpg"
+            alt="Profilbild Karin"
+          />
+          <div class="md:flex md:flex-row">
+
+            <div class="">
+              <div class="mt-12 md:mt-4">
+                <p
+                  class="text-lg lg:text-xl md:text-center text-off-white font-jost"
+                >
+                  Medicinsk fotterapeut & utbildad undersköterska.
+                </p>
+                <p
+                  class="text-lg lg:text-xl md:text-center text-off-white font-jost pt-4"
+                >
+                  Välkommen till AB’s fotvård, hos mig kan du boka allt mellan
+                  en klassisk fotvårdsbehandling till medicinsk fotvård. Du får
+                  tips och råd om hur du sköter dina fötter på bästa sätt.
+                </p>
+                <p
+                  class="text-lg lg:text-xl md:text-center text-off-white font-jost pt-4"
+                >
+                  Jag tar emot remisser från både region Halland och Västra
+                  Götalansregionen.
+                </p>
+                <p
+                  class="text-lg lg:text-xl md:text-center text-off-white font-jost pt-4"
+                >
+                  Varmt välkommen att boka din behandling hos mig!
+                </p>
+              </div>
+              <div class="h-8 md:h-12"></div>
+              <div class="lg:absolute lg:bottom-0 lg:left-0 lg:right-0">
+              <Button
+                title="BOKA TID ANETTE"
+                href="https://www.bokadirekt.se/places/helheten-friskvard-fjaras-7695?sr=59173687_5C90_464A_B138_7F22823D874D"
+                hoverTransform="transition-transform hover:scale-110"
+              />
+            </div>
+            </div>
           </div>
-          <div class="h-8 md:h-12"></div>
-          <Button
-            title="BOKA TID PIA"
-            href="https://www.bokadirekt.se/places/helheten-friskvard-fjaras-7695?sr=BCB3DFFE_9BB9_42B9_A315_458F9F33F598"
-            hoverTransform="transition-transform hover:scale-110"
-          />
         </div>
-        <div class="md:w-1/4"></div>
+        <div id="pia" class="relative">
+          <Profile
+            name="PIA HERRSTRÖMER"
+            title="Kinesiolog"
+            image="/img/pia.jpeg"
+            alt="Profilbild Pia"
+          />
+          <div class="md:flex md:flex-row">
+            <div class="">
+              <div class="mt-12 md:mt-4">
+                <p
+                  class="text-lg lg:text-xl md:text-center text-off-white font-jost"
+                >
+                  Kinesiologi och rörelseterapi.
+                </p>
+                <p
+                  class="text-lg lg:text-xl md:text-center text-off-white font-jost pt-4"
+                >
+                  Jag identifierar och lossar på hinder i kroppens
+                  rörelsemönster. Utifrån detta återskapas förutsättningar för
+                  kroppen att självläka.
+                </p>
+                <p
+                  class="text-lg lg:text-xl md:text-center text-off-white font-jost pt-4 font-bold"
+                >
+                  Hulda-Pia Omtanke AB
+                </p>
+                <p
+                  class="text-lg lg:text-xl md:text-center text-off-white font-jost pt-4"
+                >
+                  Varmt välkommen att boka din behandling hos mig!
+                </p>
+              </div>
+              <div class="h-8 md:h-12"></div>
+              <div class="lg:absolute lg:bottom-0 lg:left-0 lg:right-0">
+              <Button
+                title="BOKA TID PIA"
+                href="https://www.bokadirekt.se/places/helheten-friskvard-fjaras-7695?sr=BCB3DFFE_9BB9_42B9_A315_458F9F33F598"
+                hoverTransform="transition-transform hover:scale-110"
+              />
+            </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+    <div id="banner" class="w-screen h-auto mt-24 md:flex md:flex-row -translate-x-8">
+      <div class="md:w-1/4"></div>
+      <div class="md:w-1/2">
+        <h2 class="text-off-white p-8 text-3xl font-francoisOne md:text-center">
+          JOBBA HOS OSS
+        </h2>
+        <p
+          class="text-lg lg:text-xl md:text-center text-off-white font-jost pt-4 px-8"
+        >
+          Är du intresserad av att hyra behandlingsrum?
+        </p>
+        <p
+          class="text-lg lg:text-xl md:text-center text-off-white font-jost pt-4 px-8"
+        >
+          Hör gärna av dig till Karin på 0702-412656 eller maila
+          karin.lillevra@hotmail.com.
+        </p>
+        <p
+          class="text-lg lg:text-xl md:text-center text-off-white font-jost py-8 px-8"
+        >
+          Varmt välkommen!
+        </p>
+      </div>
+      <div class="md:w-1/4"></div>
     </div>
   </main>
-  <div id="banner" class="w-screen h-auto mt-24 md:flex md:flex-row">
-    <div class="md:w-1/4"></div>
-    <div class="md:w-1/2">
-      <h2 class="text-off-white p-8 text-3xl font-francoisOne md:text-center">JOBBA HOS OSS</h2>
-    <p class="text-lg lg:text-xl md:text-center text-off-white font-jost pt-4 px-8">
-      Är du intresserad av att hyra behandlingsrum?
-    </p>
-    <p class="text-lg lg:text-xl md:text-center text-off-white font-jost pt-4 px-8">
-      Hör gärna av dig till Karin på 0702-412656 eller maila
-      karin.lillevra@hotmail.com.
-    </p>
-    <p class="text-lg lg:text-xl md:text-center text-off-white font-jost py-8 px-8">Varmt välkommen!</p>
-    </div>
-    <div class="md:w-1/4"></div>
-  </div>
+
+  <style>
+    #banner {
+      background-image: url(/img/Helheten-backdrop-30.webp);
+      background-size: cover;
+    }
+    @media (min-width: 768px) {
+      #karin {
+        background-image: url(/img/deco3.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      #anette {
+        background-image: url(/img/deco3.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      #pia {
+        background-image: url(/img/deco3.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      
+    }
+  </style>
 </Layout>
-
-<style>
-  #banner {
-    background-image: url(/img/Helheten-backdrop-30.webp);
-    background-size: cover;
-  }
-@media (min-width:768px) {
-  #about {
-    background-image: url(/img/deco3.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
-}
-
-@media (min-width:1024px) {
-  #om {
-    background-image: url(/img/om_oss_bg.webp);
-    background-size: cover;
-  }
-}
-  
-</style>
